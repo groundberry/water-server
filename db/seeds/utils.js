@@ -1,7 +1,8 @@
 const fs = require('fs');
 const zlib = require('zlib');
+const csv = require('fast-csv');
 
-export function parseRow(row) {
+function parseRow(row) {
   return Object.keys(row).reduce((memo, key) => {
     if (row[key]) {
       memo[key] = row[key];
@@ -10,8 +11,9 @@ export function parseRow(row) {
   }, {});
 }
 
-export function readFile(file) {
+function readFile(file) {
   const rows = [];
+  
   return new Promise((resolve, reject) => {
     const stream = fs.createReadStream(file);
     const unzip = zlib.createGunzip();
@@ -30,4 +32,8 @@ export function readFile(file) {
         reject(err);
       });
   });
+}
+
+module.exports = {
+  readFile
 }

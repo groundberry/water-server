@@ -1,0 +1,3 @@
+PWSID	PWSName	Size	FacilityID	FacilityName	FacilityWaterType	SamplePointID	SamplePointName	SamplePointType	AssociatedFacilityID	AssociatedSamplePointID	CollectionDate	SampleID	Contaminant	MRL	MethodID	AnalyticalResultsSign	AnalyticalResultValue	SampleEventCode	MonitoringRequirement	Region	State
+WA5377050	Seattle Public Utilities	L	00002	Tolt Treatment Facility	SW	S02	Tolt Finish	EP	99001	B4	1/13/2015	201501140525AM	chlorate	20.00	EPA 300.1	<		SE1	AM	10	WA
+WA5377050	Seattle Public Utilities	L	00002	Tolt Treatment Facility	SW	S02	Tolt Finish	EP	99001	B4	1/13/2015	201501140525AM	chloromethane	0.20	EPA 524.3	<		SE1	AM	10	WA
